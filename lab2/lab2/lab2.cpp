@@ -4,9 +4,9 @@
 
 using namespace std;
 
-#define TEST_MATRIX
+//#define TEST_MATRIX
 //#define TEST_VERTEX_LIST
-//#define TEST_EDGE_LIST
+#define TEST_EDGE_LIST
 
 #if defined(TEST_MATRIX) + \
     defined(TEST_VERTEX_LIST) + \
@@ -108,7 +108,23 @@ void DFS(GRAPH);
 int main() {
 	setlocale(LC_ALL, "ru");
 	GRAPH gr;
-	DFS(gr);
+	int u;
+	cout << "1 - BFS\n2 - DFS" << endl;
+	cin >> u;
+	while (u != 0) {
+		switch (u)
+		{
+		case 1:
+			BFS(gr);
+			break;
+		case 2:
+			DFS(gr);
+			break;
+		default:
+			break;
+		}
+		cin >> u;
+	}
 	return 0;
 }
 
@@ -123,16 +139,22 @@ void BFS(GRAPH gr) {
 		q.pop();
 		d[j] = c + 1;
 		for (int i = 0; i < 10; i++) {
-			if (gr.G[c][i] == 1 && gr.mark[i] == 0) {
+			if (gr.G[c][i] == 1 && gr.mark[i] == 0) {	
 				q.push(i);
 				gr.mark[i] = 1; 
 			}
 		}
 		j++;
 	}
-	cout << "Массив посеженных вершин: ";
+	cout << "BFS Массив посещенных вершин: ";
 	for (int i = 0; i < 10; i++) {
-		cout << d[i] << ", ";
+		if (i != 9) {
+			cout << d[i] << " -> ";
+		}
+		else {
+			cout << d[i] << endl;
+		}
+
 	}
 }
 
@@ -155,7 +177,7 @@ void DFS(GRAPH gr) {
 		}
 		j++;
 	}
-	cout << "Массив посещенных вершин: ";
+	cout << "DFS Массив посещенных вершин: ";
 	for (int i = 0; i < 10; i++) {
 		if (i != 9) {
 			cout << d[i] << " -> ";
