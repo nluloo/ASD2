@@ -130,8 +130,8 @@ int main() {
 
 void BFS(GRAPH gr) {
 	queue<int> q;
-	q.push(0);
-	gr.mark[0] = 1;
+	q.push(5);
+	gr.mark[5] = 1;
 	int d[10];
 	int j = 0;
 	while (!q.empty()) {
