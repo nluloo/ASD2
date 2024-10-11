@@ -1,0 +1,81 @@
+﻿Сборка начата 09.10.2024 18:17:29.
+Уровень детализации журнала: Normal.     1>Проект "D:\labs\asd2\lab6\lab6\lab6.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
+         Создание "x64\Debug\lab6.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "x64\Debug\lab6.tlog\unsuccessfulbuild".
+       ClCompile:
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt lab6.cpp
+         lab6.cpp
+     1>D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54): warning C4267: инициализация: преобразование из "size_t" в "_Ty2"; возможна потеря данных
+D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54): warning C4267:         with
+D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54): warning C4267:         [
+D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54): warning C4267:             _Ty2=int
+D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54): warning C4267:         ]
+         (компиляция исходного файла "lab6.cpp")
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54):
+         контекст создания экземпляра шаблона (сначала самый старый)
+         	D:\labs\asd2\lab6\lab6\lab6.cpp(43,21):
+         	выполняется компиляция ссылки на экземпляр шаблон функции "void std::vector<std::pair<_Kty,_Ty>,std::allocator<std::pair<_Kty,_Ty>>>::emplace_back<_Ty1&,unsigned __int64>(_Ty1 &,unsigned __int64 &&)"
+                 with
+                 [
+                     _Kty=char,
+                     _Ty=int,
+                     _Ty1=const char
+                 ]
+         	D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(862,24):
+         	выполняется компиляция ссылки на экземпляр шаблон функции "_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_one_at_back<_Ty1&,unsigned __int64>(_Ty1 &,unsigned __int64 &&)"
+                 with
+                 [
+                     _Ty=std::pair<char,int>,
+                     _Ty1=const char
+                 ]
+         	D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(780,20):
+         	выполняется компиляция ссылки на экземпляр шаблон функции "_Ty &std::vector<_Ty,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<_Ty1&,unsigned __int64>(_Ty1 &,unsigned __int64 &&)"
+                 with
+                 [
+                     _Ty=std::pair<char,int>,
+                     _Ty1=const char
+                 ]
+         	D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(795,13):
+         	выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Construct_in_place<std::pair<_Kty,_Ty>,_Ty1&,unsigned __int64>(std::pair<_Kty,_Ty> &,_Ty1 &,unsigned __int64 &&) noexcept"
+                 with
+                 [
+                     _Kty=char,
+                     _Ty=int,
+                     _Ty1=const char
+                 ]
+         	D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\xutility(255,61):
+         	выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<_Kty,_Ty>::pair<_Ty1&,unsigned __int64,0>(_Other1,_Other2 &&) noexcept"
+                 with
+                 [
+                     _Kty=char,
+                     _Ty=int,
+                     _Ty1=const char,
+                     _Other1=const char &,
+                     _Other2=unsigned __int64
+                 ]
+         
+       Link:
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\labs\asd2\lab6\x64\Debug\lab6.exe" /INCREMENTAL /ILK:"x64\Debug\lab6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\labs\asd2\lab6\x64\Debug\lab6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\labs\asd2\lab6\x64\Debug\lab6.lib" /MACHINE:X64 x64\Debug\lab6.obj
+         lab6.vcxproj -> D:\labs\asd2\lab6\x64\Debug\lab6.exe
+       FinalizeBuildStatus:
+         Файл "x64\Debug\lab6.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "x64\Debug\lab6.tlog\lab6.lastbuildstate".
+     1>Сборка проекта "D:\labs\asd2\lab6\lab6\lab6.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "D:\labs\asd2\lab6\lab6\lab6.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54): warning C4267: инициализация: преобразование из "size_t" в "_Ty2"; возможна потеря данных
+       D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54): warning C4267:         with
+       D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54): warning C4267:         [
+       D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54): warning C4267:             _Ty2=int
+       D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\utility(250,54): warning C4267:         ]
+
+    Предупреждений: 1
+    Ошибок: 0
+
+Прошло времени 00:00:02.88
