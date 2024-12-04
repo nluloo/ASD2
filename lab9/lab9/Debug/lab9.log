@@ -1,0 +1,51 @@
+﻿Сборка начата 20.11.2024 18:17:08.
+Уровень детализации журнала: Normal.     1>Проект "D:\labs\asd2\lab9\lab9\lab9.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
+         Создание "Debug\lab9.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "Debug\lab9.tlog\unsuccessfulbuild".
+       ClCompile:
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt lab9.cpp
+         lab9.cpp
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(19,27): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(53,23): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(109,23): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(112,27): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(123,23): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(126,31): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(145,15): warning C4018: >: несоответствие типов со знаком и без знака
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(182,23): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(190,23): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(200,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(243,31): warning C4018: <: несоответствие типов со знаком и без знака
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(265,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+       Link:
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\labs\asd2\lab9\Debug\lab9.exe" /INCREMENTAL /ILK:"Debug\lab9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\labs\asd2\lab9\Debug\lab9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\labs\asd2\lab9\Debug\lab9.lib" /MACHINE:X86 Debug\lab9.obj
+         lab9.vcxproj -> D:\labs\asd2\lab9\Debug\lab9.exe
+       FinalizeBuildStatus:
+         Файл "Debug\lab9.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\lab9.tlog\lab9.lastbuildstate".
+     1>Сборка проекта "D:\labs\asd2\lab9\lab9\lab9.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "D:\labs\asd2\lab9\lab9\lab9.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\labs\asd2\lab9\lab9\lab9.cpp(19,27): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\labs\asd2\lab9\lab9\lab9.cpp(53,23): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\labs\asd2\lab9\lab9\lab9.cpp(109,23): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\labs\asd2\lab9\lab9\lab9.cpp(112,27): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\labs\asd2\lab9\lab9\lab9.cpp(123,23): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\labs\asd2\lab9\lab9\lab9.cpp(126,31): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\labs\asd2\lab9\lab9\lab9.cpp(145,15): warning C4018: >: несоответствие типов со знаком и без знака
+         D:\labs\asd2\lab9\lab9\lab9.cpp(182,23): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\labs\asd2\lab9\lab9\lab9.cpp(190,23): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\labs\asd2\lab9\lab9\lab9.cpp(200,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+         D:\labs\asd2\lab9\lab9\lab9.cpp(243,31): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\labs\asd2\lab9\lab9\lab9.cpp(265,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+
+    Предупреждений: 12
+    Ошибок: 0
+
+Прошло времени 00:00:02.18

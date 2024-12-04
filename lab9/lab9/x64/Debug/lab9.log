@@ -1,0 +1,128 @@
+﻿Сборка начата 13.11.2024 03:19:07.
+Уровень детализации журнала: Normal.     1>Проект "D:\labs\asd2\lab9\lab9\lab9.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
+         Обращение к "x64\Debug\lab9.tlog\unsuccessfulbuild".
+       ClCompile:
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt lab9.cpp
+         lab9.cpp
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(59,5): error C2065: chromosome: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(59,16): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "buff"
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(59,16): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(60,5): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(62,13): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(63,13): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(68,23): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(69,13): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(72,12): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(75,24): error C2065: chromosome: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(75,17): error C2923: std::vector: "chromosome" не является допустимым аргументом типа шаблон для параметра "_Ty"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(75,24):
+          см. объявление "chromosome"
+         
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(75,17): error C2976: std::vector: слишком мало аргументов шаблон
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(436,1):
+          см. объявление "std::vector"
+         
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(76,35): error C2662: allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type std::vector<_Ty,_Alloc>::size(void) noexcept const: невозможно преобразовать указатель "this" из "std::vector" в "const std::vector<_Ty,_Alloc> &"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(76,25):
+         Причина: невозможно преобразовать "std::vector" в "const std::vector<_Ty,_Alloc>"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(76,25):
+         Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(1875,39):
+          см. объявление "std::vector<_Ty,_Alloc>::size"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(76,35):
+         при попытке сопоставить список аргументов "()"
+         
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(79,29): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "std::vector" (или приемлемое преобразование отсутствует)
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(1900,40):
+         может быть "const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const"
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(1890,34):
+         или       "_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(79,29):
+         при попытке сопоставить список аргументов "(std::vector, int)"
+         
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(80,21): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "std::vector" (или приемлемое преобразование отсутствует)
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(1900,40):
+         может быть "const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const"
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(1890,34):
+         или       "_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(80,21):
+         при попытке сопоставить список аргументов "(std::vector, int)"
+         
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(83,45): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "std::vector" (или приемлемое преобразование отсутствует)
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(1900,40):
+         может быть "const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const"
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(1890,34):
+         или       "_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(83,45):
+         при попытке сопоставить список аргументов "(std::vector, int)"
+         
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(89,12): error C2065: chromosome: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(89,5): error C2923: std::vector: "chromosome" не является допустимым аргументом типа шаблон для параметра "_Ty"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(89,12):
+          см. объявление "chromosome"
+         
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(89,5): error C2976: std::vector: слишком мало аргументов шаблон
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(436,1):
+          см. объявление "std::vector"
+         
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(89,24): error C2133: population: неизвестный размер
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(89,24): error C2512: std::vector: нет подходящего конструктора по умолчанию
+         D:\Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\vector(436,1):
+          см. объявление "std::vector"
+         
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(90,5): error C2065: chromosome: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(90,16): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "buff"
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(90,16): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(93,9): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(94,9): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(95,30): error C2065: buff: необъявленный идентификатор
+     1>D:\labs\asd2\lab9\lab9\lab9.cpp(99,5): error C2664: "void printPopul(std::vector)": невозможно преобразовать аргумент 1 из "std::vector" в "std::vector"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(99,16):
+         Создать class "std::vector" с помощью конструктора копий невозможно, так как конструкторы копий неоднозначны или отсутствуют
+         D:\labs\asd2\lab9\lab9\lab9.cpp(75,6):
+          см. объявление "printPopul"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(99,5):
+         при попытке сопоставить список аргументов "(std::vector)"
+         
+     1>Сборка проекта "D:\labs\asd2\lab9\lab9\lab9.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+       "D:\labs\asd2\lab9\lab9\lab9.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\labs\asd2\lab9\lab9\lab9.cpp(59,5): error C2065: chromosome: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(59,16): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "buff"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(59,16): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(60,5): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(62,13): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(63,13): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(68,23): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(69,13): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(72,12): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(75,24): error C2065: chromosome: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(75,17): error C2923: std::vector: "chromosome" не является допустимым аргументом типа шаблон для параметра "_Ty"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(75,17): error C2976: std::vector: слишком мало аргументов шаблон
+         D:\labs\asd2\lab9\lab9\lab9.cpp(76,35): error C2662: allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type std::vector<_Ty,_Alloc>::size(void) noexcept const: невозможно преобразовать указатель "this" из "std::vector" в "const std::vector<_Ty,_Alloc> &"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(79,29): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "std::vector" (или приемлемое преобразование отсутствует)
+         D:\labs\asd2\lab9\lab9\lab9.cpp(80,21): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "std::vector" (или приемлемое преобразование отсутствует)
+         D:\labs\asd2\lab9\lab9\lab9.cpp(83,45): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "std::vector" (или приемлемое преобразование отсутствует)
+         D:\labs\asd2\lab9\lab9\lab9.cpp(89,12): error C2065: chromosome: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(89,5): error C2923: std::vector: "chromosome" не является допустимым аргументом типа шаблон для параметра "_Ty"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(89,5): error C2976: std::vector: слишком мало аргументов шаблон
+         D:\labs\asd2\lab9\lab9\lab9.cpp(89,24): error C2133: population: неизвестный размер
+         D:\labs\asd2\lab9\lab9\lab9.cpp(89,24): error C2512: std::vector: нет подходящего конструктора по умолчанию
+         D:\labs\asd2\lab9\lab9\lab9.cpp(90,5): error C2065: chromosome: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(90,16): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "buff"
+         D:\labs\asd2\lab9\lab9\lab9.cpp(90,16): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(93,9): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(94,9): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(95,30): error C2065: buff: необъявленный идентификатор
+         D:\labs\asd2\lab9\lab9\lab9.cpp(99,5): error C2664: "void printPopul(std::vector)": невозможно преобразовать аргумент 1 из "std::vector" в "std::vector"
+
+    Предупреждений: 0
+    Ошибок: 28
+
+Прошло времени 00:00:00.46
