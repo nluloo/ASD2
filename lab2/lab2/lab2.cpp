@@ -4,9 +4,9 @@
 
 using namespace std;
 
-//#define TEST_MATRIX
+#define TEST_MATRIX
 //#define TEST_VERTEX_LIST
-#define TEST_EDGE_LIST
+//#define TEST_EDGE_LIST
 
 #if defined(TEST_MATRIX) + \
     defined(TEST_VERTEX_LIST) + \
@@ -17,16 +17,16 @@ using namespace std;
 struct GRAPH {
 #ifdef TEST_MATRIX
 	int G[10][10] = {
-		{0, 1, 0, 0, 1, 0, 0, 0, 0, 0 },
-		{1, 0, 0, 0, 0, 0, 1, 1, 0, 0 },
-		{0, 0, 0, 0, 0, 0, 0, 1, 0, 0 },
-		{0, 0, 0, 0, 0, 1, 0, 0, 1, 0 },
-		{1, 0, 0, 0, 0, 1, 0, 0, 0, 0 },
-		{0, 0, 0, 1, 1, 0, 0, 0, 1, 0 },
-		{0, 1, 0, 0, 0, 0, 0, 1, 0, 0 },
-		{0, 1, 1, 0, 0, 0, 1, 0, 0, 0 },
-		{0, 0, 0, 1, 0, 1, 0, 0, 0, 1 },
-		{0, 0, 0, 0, 0, 0, 0, 0, 1, 0 },
+		{0, 1, 0, 0, 0, 0, 0, 0, 1, 1 },
+		{1, 0, 1, 0, 0, 0, 0, 1, 0, 0 },
+		{0, 1, 0, 1, 0, 0, 0, 0, 0, 1 },
+		{0, 0, 1, 0, 1, 0, 0, 0, 1, 0 },
+		{0, 0, 0, 1, 0, 1, 1, 0, 0, 0 },
+		{0, 0, 0, 0, 1, 0, 1, 0, 0, 1 },
+		{0, 0, 0, 0, 1, 1, 0, 1, 0, 0 },
+		{0, 1, 0, 0, 0, 0, 1, 0, 1, 0 },
+		{1, 0, 0, 1, 0, 0, 0, 1, 0, 0 },
+		{1, 0, 1, 0, 0, 1, 0, 0, 0, 0 },
 	};
 #endif
 	int mark[10];
@@ -130,8 +130,8 @@ int main() {
 
 void BFS(GRAPH gr) {
 	queue<int> q;
-	q.push(5);
-	gr.mark[5] = 1;
+	q.push(2);
+	gr.mark[2] = 1;
 	int d[10];
 	int j = 0;
 	while (!q.empty()) {
@@ -161,8 +161,8 @@ void BFS(GRAPH gr) {
 void DFS(GRAPH gr) {
 	stack<int> s;
 
-	s.push(0);
-	gr.mark[0] = 1;
+	s.push(2);
+	gr.mark[2] = 1;
 	int d[10];
 	int j = 0;
 	while (!s.empty()) {
